@@ -1,16 +1,90 @@
-# Video Game Sales Analysis
-## Overview
-This project analyzes the dataset froma Kaggle concerning historical video game sales to identify market trends across genres, platforms, publishers and regions using Python and Power BI.
-The dataset presents reports game sales by world's region during a timespan from 1980 to 2020. 
-The business questions I asked myself to analyze the dataset are the following:
-Which games generated the highest global sales?
-Which genres are the most successful?
-Which platforms generated the highest sales?
-How have global sales changed over time?
-To answer them I have used python libraries panda, numpy and matlplotlib to visualize graphs.
+# 🎮 Video Game Sales Analysis
 
-## Insights
-After selecting the top ten titles for their global sales I reported them on a bar chart exploiting the regional sales information to add a visive layer on it. From this analysis is possible to see how the top sales title "Wii sports" has two-times the earnings of the second top sales title "Super Mario Bros", half of them coming from the North-American market. This led me to calculate the total sales of all records presented in the dataset to confront them by their market-source, showing that the North-American market contributes alone to half of global sales. About this, the top 10 title "Duck Hunt" is present in the this ranking although it was sold almost exclusively on the North-American market.
-With regard to the genres I have grouped all the records by their genre and aggregate the total sales for each one. Then I presented it on a pie chart the shows how Action and Sports games alone cover 1/3 of the entire market.
-Looking at the console market, similar to the top selling titles, I have grouped by console name and aggregated by the total sales, then visualizing it on a bar chart. The top selling console is the PS2, even if it is not the most sold on the North-American market, that prefers the XBOX360. This is due to the Japanese market's rejection of the Microsoft's product which contributes almost nothing to sales of XBOX. To read correctly this chart I also printed the year that each console appeared on the market (accordingly to this dataset).
-Finally I wanted to investigate the evolution of the video game market over time. First thing I grouped by year and aggregate the sales, then visualized it on a line chart to see the sales (on the y axis) over years (on the x axis). From this graph is possible to see the rising of the market during the 90's and the fast growing sales until late 2000's, then there is the sales collapse from 2010. The release of the PS2 and Xbox (the two top-selling consoles) in 2000 and 2005 certainly contributed to the fast-rising sales. By grouping the top five years for sales, it's possible to see how the sales peak was anticipated by the Japanese market in 2006, looking at the line graph for regional sales over the years we can say that the japanese market, however small compared to the others, anticipated growth trends and had a much more controlled decline. From this brief analysis we can start to ask ourselves various questions that may go beyond the available dataset. Is the collapse due to the release of subscription-based streaming games? Are new consoles destined to sell less than their predecessors? How have smartphones and social networks affected this market?
+## 📌 Project Overview
+
+This project analyzes historical video game sales data to identify market trends across genres, platforms, publishers, and geographic regions.
+
+The analysis was performed using **Python**, **Pandas**, and **Matplotlib**, following a complete data analysis workflow: data cleaning, exploratory data analysis (EDA), business-driven insights, and data visualization.
+
+---
+
+## 📂 Dataset
+
+The dataset contains information about more than **16,000 video games**, including:
+
+* Game title
+* Platform
+* Release year
+* Genre
+* Publisher
+* Sales in North America, Europe, Japan, and Other regions
+* Global sales
+
+---
+
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Jupyter Notebook
+
+---
+
+## 🎯 Business Questions
+
+The project aims to answer the following business questions:
+
+1. Which video games generated the highest global sales?
+2. Which genres are the most successful?
+3. Which gaming platforms generated the highest sales?
+4. How have video game sales evolved over time?
+
+---
+
+## 🧹 Data Cleaning
+
+The following preprocessing steps were performed before the analysis:
+
+* Removed duplicate records.
+* Handled missing values.
+* Corrected data types.
+* Standardized column names.
+* Removed unnecessary columns.
+* Filled missing publisher values whenever the same game title was associated with a known publisher.
+
+---
+
+## 📊 Exploratory Data Analysis
+
+The notebook includes several analyses and visualizations, including:
+
+* Top 10 best-selling games
+* Global sales by genre
+* Sales distribution by platform
+* Publisher performance
+* Sales trends over time
+* Genre evolution through the years
+* Regional sales comparison
+* Platform sales by geographic region
+
+---
+
+## 🔍 Key Insights
+
+After selecting the top ten video games by global sales, I displayed them in a bar chart, using regional sales to add an additional layer of information. This analysis shows that the best-selling title, Wii Sports, generated almost twice the sales of the second-ranked game, Super Mario Bros., with nearly half of its sales coming from the North American market.
+
+This observation led me to calculate the total sales across the entire dataset and compare the contribution of each geographic market. The analysis shows that North America alone accounts for nearly half of total global sales. An interesting example is Duck Hunt, which appears in the top ten best-selling games despite being sold almost exclusively in the North American market.
+
+To analyze genre performance, I grouped all records by genre and aggregated total sales for each category. The resulting pie chart shows that Action and Sports games together account for approximately one-third of the entire market.
+
+I then analyzed the console market by grouping the data by platform and aggregating total sales. The results were displayed in a bar chart. The PlayStation 2 is the highest-selling platform overall, although it is not the best-selling console in the North American market, where the Xbox 360 performs better. This difference is largely explained by the Japanese market, where Microsoft's console achieved very limited sales. To better interpret these results, I also displayed the first year in which each platform appears in the dataset.
+
+Finally, I investigated how the video game market evolved over time. I first grouped the data by release year and aggregated total global sales, then visualized the results with a line chart. The graph highlights the market's steady growth throughout the 1990s, followed by a rapid increase in sales until the late 2000s, and then a sharp decline beginning around 2010.
+
+The release of the PlayStation 2 and Xbox 360, two of the highest-selling consoles in the dataset, likely contributed to the rapid growth observed during this period.
+
+By focusing on the five years with the highest total sales, it is possible to observe that the Japanese market reached its peak earlier, in 2006. Looking at the regional sales trends over time, the Japanese market, although considerably smaller than North America and Europe, appears to have anticipated the overall growth trend and experienced a more gradual decline.
+
+This brief analysis raises several interesting questions that go beyond the information available in the dataset. Is the decline in sales related to the rise of subscription-based gaming services? Are newer console generations destined to sell less than their predecessors? How have smartphones and social media influenced the evolution of the video game industry?
