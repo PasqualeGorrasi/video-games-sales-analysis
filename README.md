@@ -69,13 +69,17 @@ The notebook includes several analyses and visualizations, including:
 * Regional sales comparison
 * Platform sales by geographic region
 
----
+
+## 📊 Power BI Dashboard
+
+The project also includes an interactive Power BI dashboard that summarizes the main insights of the analysis.
+
 
 ## 🔍 Key Insights
 
 After selecting the top ten video games by global sales, I displayed them in a bar chart, using regional sales to add an additional layer of information. This analysis shows that the best-selling title, Wii Sports, generated almost twice the sales of the second-ranked game, Super Mario Bros., with nearly half of its sales coming from the North American market.
 
-This observation led me to calculate the total sales across the entire dataset and compare the contribution of each geographic market. The analysis shows that North America alone accounts for nearly half of total global sales. An interesting example is Duck Hunt, which appears in the top ten best-selling games despite being sold almost exclusively in the North American market.
+This observation led me to calculate the total sales across the entire dataset and compare the contribution of each geographic market. The analysis shows that North America alone accounts for nearly half of total global sales.
 
 To analyze genre performance, I grouped all records by genre and aggregated total sales for each category. The resulting pie chart shows that Action and Sports games together account for approximately one-third of the entire market.
 
